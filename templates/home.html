@@ -3,6 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+    background:#111827;
+    color:white;
+    font-family:Arial;
+}
+
+h1{
+    color:#38bdf8;
+}
+
+nav a{
+    color:white;
+    margin-right:20px;
+    text-decoration:none;
+}
+
+nav a:hover{
+    color:yellow;
+}
+    </style>
     <title>Crow Test</title>
 </head>
 <body>
@@ -14,7 +35,16 @@
         <a href="/">Home</a> |
         <a href="/project">Project</a> |
         <a href="/about">About</a>
+        <a href="/notes">notes</a>
     </nav>
+<form action="/login" method="POST">
 
+    <input type="text" name="username">
+
+    <input type="password" name="password">
+
+    <button type="submit">Login</button>
+
+</form>
 </body>
 </html>

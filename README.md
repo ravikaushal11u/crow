@@ -196,98 +196,13 @@ crow::mustache::set_global_base("../templates");
 
 ---
 
-# 11. Mistakes We Fixed
-
-### ❌ Missing CMakeLists.txt
-
-Error
-
-```
-The source directory does not contain CMakeLists.txt
-```
-
-Solution
-
-Created
-
-```
-CMakeLists.txt
-```
-
----
-
-### ❌ Missing Asio
-
-Error
-
-```
-Could NOT find asio
-```
-
-Solution
-
-```bash
-sudo apt install libasio-dev
-```
-
----
-
-### ❌ Empty home.html
-
-Initially
-
-```
-0 bytes
-```
-
-Saved actual HTML content.
-
----
-
-### ❌ Wrong Template Base
-
-Instead of
-
-```cpp
-set_base(...)
-```
-
-Used
-
-```cpp
-set_global_base(...)
-```
-
----
-
-### ❌ Wrong Folder
-
-Executable runs from
-
-```
-build/
-```
-
-Template is in
-
-```
-../templates
-```
-
----
-
-# 12. Commands Used
-
-Build
-
-```bash
 cmake ..
 
 cmake --build .
 ```
 
-Run
-
+# Run
+cd /workspaces/crow/build
 ```bash
 ./CrowHello
 ```
