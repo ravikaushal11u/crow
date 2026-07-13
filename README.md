@@ -31,7 +31,7 @@ crow/
 ---
 
 # 3. Install Dependencies
-
+ and then create project
 Ubuntu / Codespaces
 
 ```bash
