@@ -65,32 +65,32 @@
 // }
 
 
-// post 
+post 
 
-// #include <crow.h>
-// #include <iostream>
+#include <crow.h>
+#include <iostream>
 
-// int main()
-// {
-//     crow::mustache::set_global_base("../templates");
+int main()
+{
+    crow::mustache::set_global_base("../templates");
 
-//     crow::SimpleApp app;
+    crow::SimpleApp app;
 
-//     CROW_ROUTE(app, "/")
-//     ([] {
-//         return crow::mustache::load("home.html").render();
-//     });
+    CROW_ROUTE(app, "/")
+    ([] {
+        return crow::mustache::load("home.html").render();
+    });
 
-//     CROW_ROUTE(app, "/login")
-//     .methods(crow::HTTPMethod::POST)
-//     ([](const crow::request& req)
-//     {
-//         std::cout << "Body: " << req.body << std::endl;
+    CROW_ROUTE(app, "/login")
+    .methods(crow::HTTPMethod::POST)
+    ([](const crow::request& req)
+    {
+        std::cout << "Body: " << req.body << std::endl;
 
-//         return crow::response("Form Submitted");
-//     });
+        return crow::response("Form Submitted");
+    });
 
-//     app.port(18080).multithreaded().run();
-// }
+    app.port(18080).multithreaded().run();
+}
 
 // CRUD OPERATION
