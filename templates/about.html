@@ -3,153 +3,147 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>GET Form Example</title>
+<title>About | Ravi Kaushal</title>
 
 <style>
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Segoe UI,Tahoma,Geneva,Verdana,sans-serif;
+    font-family:Arial,Helvetica,sans-serif;
 }
 
 body{
-    background:linear-gradient(135deg,#4facfe,#00f2fe);
-    height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-}
-
-.container{
-    width:400px;
-    background:#fff;
-    border-radius:20px;
-    padding:40px;
-    box-shadow:0 15px 40px rgba(0,0,0,.2);
-    text-align:center;
-}
-
-.container h1{
-    color:#333;
-    margin-bottom:10px;
-}
-
-.container p{
-    color:#666;
-    margin-bottom:30px;
-}
-
-form{
-    display:flex;
-    flex-direction:column;
-    gap:20px;
-}
-
-input{
-    padding:14px;
-    border:2px solid #ddd;
-    border-radius:10px;
-    outline:none;
-    font-size:16px;
-    transition:.3s;
-}
-
-input:focus{
-    border-color:#4facfe;
-    box-shadow:0 0 8px rgba(79,172,254,.4);
-}
-
-button{
-    padding:14px;
-    border:none;
-    border-radius:10px;
-    background:#4facfe;
+    background:#0f172a;
     color:white;
-    font-size:17px;
-    cursor:pointer;
-    transition:.3s;
 }
 
-button:hover{
-    background:#0f8cff;
-    transform:translateY(-2px);
+header{
+    background:#111827;
+    padding:20px 8%;
 }
 
-.info{
-    margin-top:30px;
-    padding:18px;
-    background:#f5f5f5;
-    border-radius:12px;
+header h1{
+    color:#38bdf8;
 }
 
-.info h2{
-    color:#444;
-    margin-bottom:10px;
+nav{
+    margin-top:10px;
 }
 
-.info p{
-    color:#555;
-    line-height:1.6;
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-right:20px;
 }
 
-.footer{
-    margin-top:25px;
-    color:#888;
-    font-size:14px;
+nav a:hover{
+    color:#38bdf8;
 }
-
-@media(max-width:500px){
 
 .container{
-    width:90%;
-    padding:30px;
+    width:80%;
+    margin:50px auto;
 }
 
+.card{
+    background:#1e293b;
+    padding:30px;
+    border-radius:10px;
+}
+
+.card h2{
+    color:#38bdf8;
+    margin-bottom:20px;
+}
+
+.card p{
+    line-height:30px;
+    color:#cbd5e1;
+}
+
+.skills{
+    margin-top:30px;
+}
+
+.skills h3{
+    color:#38bdf8;
+    margin-bottom:15px;
+}
+
+.skill{
+    display:inline-block;
+    background:#334155;
+    padding:10px 20px;
+    margin:8px;
+    border-radius:25px;
+}
+
+footer{
+    background:#111827;
+    text-align:center;
+    padding:20px;
+    margin-top:50px;
+    color:#94a3b8;
 }
 </style>
 
 </head>
-
 <body>
+
+<header>
+<h1>Ravi Kaushal</h1>
+
+<nav>
+<a href="/">Home</a>
+<a href="/about">About</a>
+<a href="/project">Projects</a>
+<a href="/contact">Contact</a>
+</nav>
+</header>
 
 <div class="container">
 
-    <h1>GET Form Example</h1>
+<div class="card">
 
-    <p>Search a user by entering the name below.</p>
+<h2>About Me</h2>
 
-    <form action="/search" method="GET">
+<p>
+Hello! I'm <strong>Ravi Kaushal</strong>, a BCA student and an aspiring
+Full Stack Web Developer from Jharkhand, India.
+I enjoy creating modern, responsive, and user-friendly websites using
+HTML, CSS, JavaScript, Python, Django, and MySQL.
+</p>
 
-        <input
-            type="text"
-            name="name"
-            placeholder="Enter Your Name"
-            required>
+<br>
 
-        <button type="submit">
-            🔍 Search
-        </button>
+<p>
+My goal is to become a skilled software developer and work on real-world
+projects that solve practical problems. I am continuously learning new
+technologies and improving my programming skills.
+</p>
 
-    </form>
+<div class="skills">
+<h3>My Skills</h3>
 
-    <div class="info">
-
-        <h2>Hello 👋</h2>
-
-        <p>
-            Hello, I am <strong>Ravi</strong>.<br>
-            Welcome to my sample GET Form page built using HTML & CSS.
-        </p>
-
-    </div>
-
-    <div class="footer">
-        © 2026 Ravi | HTML GET Form Demo
-    </div>
+<span class="skill">HTML</span>
+<span class="skill">CSS</span>
+<span class="skill">JavaScript</span>
+<span class="skill">Python</span>
+<span class="skill">Django</span>
+<span class="skill">MySQL</span>
+<span class="skill">Git</span>
+<span class="skill">Bootstrap</span>
 
 </div>
+
+</div>
+
+</div>
+
+<footer>
+© 2026 Ravi Kaushal | Portfolio
+</footer>
 
 </body>
 </html>
