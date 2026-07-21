@@ -1,32 +1,189 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <style>
-            body{
-    background:#111827;
-    color:white;
-    font-family:Arial;
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects | Ravi Kaushal</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
 }
 
-h1{
+body{
+    background:#0f172a;
+    color:white;
+}
+
+header{
+    background:#111827;
+    padding:20px 8%;
+}
+
+header h1{
     color:#38bdf8;
+}
+
+nav{
+    margin-top:10px;
 }
 
 nav a{
     color:white;
-    margin-right:20px;
     text-decoration:none;
+    margin-right:20px;
 }
 
 nav a:hover{
-    color:yellow;
+    color:#38bdf8;
 }
-        </style>
-    <title>Document</title>
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:50px auto;
+}
+
+.title{
+    text-align:center;
+    color:#38bdf8;
+    margin-bottom:40px;
+    font-size:38px;
+}
+
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#1e293b;
+    border-radius:10px;
+    padding:25px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 20px rgba(56,189,248,.3);
+}
+
+.card h3{
+    color:#38bdf8;
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#cbd5e1;
+    line-height:26px;
+    margin-bottom:20px;
+}
+
+.btn{
+    display:inline-block;
+    padding:10px 20px;
+    background:#38bdf8;
+    color:white;
+    text-decoration:none;
+    border-radius:6px;
+}
+
+.btn:hover{
+    background:#0ea5e9;
+}
+
+footer{
+    margin-top:60px;
+    background:#111827;
+    text-align:center;
+    padding:20px;
+    color:#94a3b8;
+}
+</style>
+
 </head>
 <body>
-    project page
+
+<header>
+
+<h1>Ravi Kaushal</h1>
+
+<nav>
+<a href="/">Home</a>
+<a href="/about">About</a>
+<a href="/project">Projects</a>
+<a href="/contact">Contact</a>
+</nav>
+
+</header>
+
+<div class="container">
+
+<h2 class="title">My Projects</h2>
+
+<div class="projects">
+
+<div class="card">
+<h3>AI Travel Planner</h3>
+<p>
+An AI-powered travel planning web application built using Python, Django, and modern web technologies.
+</p>
+<a href="#" class="btn">View Project</a>
+</div>
+
+<div class="card">
+<h3>The Way Portfolio</h3>
+<p>
+A modern responsive personal portfolio website showcasing skills, projects, and contact details.
+</p>
+<a href="#" class="btn">View Project</a>
+</div>
+
+<div class="card">
+<h3>College Management System</h3>
+<p>
+A complete College Management System developed using PHP and MySQL with an admin panel.
+</p>
+<a href="#" class="btn">View Project</a>
+</div>
+
+<div class="card">
+<h3>Food Delivery Website</h3>
+<p>
+A responsive food ordering website inspired by Swiggy with an attractive UI and backend support.
+</p>
+<a href="#" class="btn">View Project</a>
+</div>
+
+<div class="card">
+<h3>Notes App</h3>
+<p>
+A student notes management application to organize notes semester-wise with a clean interface.
+</p>
+<a href="#" class="btn">View Project</a>
+</div>
+
+<div class="card">
+<h3>Blog Website</h3>
+<p>
+A blogging platform built using Django with authentication, CRUD operations, and responsive design.
+</p>
+<a href="#" class="btn">View Project</a>
+</div>
+
+</div>
+
+</div>
+
+<footer>
+© 2026 Ravi Kaushal | Portfolio
+</footer>
+
 </body>
 </html>
+```
