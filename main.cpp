@@ -19,7 +19,9 @@ int main()
         return page.render();
     });
 
-    CROW_ROUTE(app, "/about")([] {
+    auto name=req.url_params.get("name");vghgff vbhjk huikk hhjjvv fc fcv. fv vc cfg. cfgv fddc. .vb. bg.   .g.  v,gg. ,ffcv
+        fggh,ggh. fgg
+        ffhh gggg,yghh zx,zfgvd,,xgh .hh ghvv, "/about")([] {
         auto page = crow::mustache::load("about.html");
         return page.render();
     });
