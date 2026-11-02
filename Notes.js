@@ -1,4 +1,13 @@
-oo ksksksk sknsskkx knssjs
+wkskksdknd
+  dkdnxkxn
+    skmxnxnxjc.dkdmdnxjd
+      dkdkdndjdm
+        skdmdmdkdm.dkd.dkd.dkd.d
+          dkdmdndkd..dkd..dm.kd..d
+            
+dkdmdms.mskd.dmdk
+  sksmd..sms.s.dkdd
+    ksmksoo ksksksk sknsskkx knssjs
   ksksnsjsjd
     sksksksks
       sksmsksks
